@@ -13,7 +13,7 @@ app.route("/employees").get((req, res)=>{
 // GET / employees / random to get random employee
 
 app.route("/employees/random").get((req, res)=>{
-    let randomID = Math.floor(Math.random() * employees.length -1);
+    let randomID = Math.floor(Math.random() * employees.length);
     console.log(randomID);
     const randomEmployee = employees[randomID];
 
